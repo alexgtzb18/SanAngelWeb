@@ -1,3 +1,4 @@
+import { Footer } from "rsuite";
 import Banner from "./Components/Banner";
 import BodyPage from "./Components/BodyPage";
 import FooterPage from "./Components/FooterPage";
