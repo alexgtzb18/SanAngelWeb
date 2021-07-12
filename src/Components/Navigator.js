@@ -1,35 +1,55 @@
 import { Container, Header, Content, Footer, Navbar, Nav, Icon, Dropdown } from 'rsuite';
+import styled from 'styled-components';
+
+import { LogoAzul } from '../assets';
+
+
+const StyledContainer = styled.div`
+    display: flex;
+    width: 100%;
+    margin: 20px;
+    z-index: 20;
+    
+    
+
+
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .logo-nav{
+        width: 10%;
+    }
+
+    ol{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    li{
+        margin: 20px
+    }
+    
+
+`;
+
+
 
 const Navigator = () => {
     return (
-        <div className="show-fake-browser navbar-page">
-            <Container>
-                <Header>
-                    <Navbar appearance="inverse">
-                        <Navbar.Header>
-                            <a className="navbar-brand logo">BRAND</a>
-                        </Navbar.Header>
-                        <Navbar.Body>
-                            <Nav>
-                                <Nav.Item icon={<Icon icon="home" />}>Home</Nav.Item>
-                                <Nav.Item>News</Nav.Item>
-                                <Nav.Item>Products</Nav.Item>
-                                <Dropdown title="About">
-                                    <Dropdown.Item>Company</Dropdown.Item>
-                                    <Dropdown.Item>Team</Dropdown.Item>
-                                    <Dropdown.Item>Contact</Dropdown.Item>
-                                </Dropdown>
-                            </Nav>
-                            <Nav pullRight>
-                                <Nav.Item icon={<Icon icon="cog" />}>Settings</Nav.Item>
-                            </Nav>
-                        </Navbar.Body>
-                    </Navbar>
-                </Header>
-                <Content>Content</Content>
-                <Footer>Footer</Footer>
-            </Container>
-        </div>
+        <StyledContainer>
+            <div className="navbar">
+                <img src={LogoAzul} alt="LogoSanAngel" className="logo-nav"/>
+                <ol>
+                    <li>Inicio</li>
+                    <li>Productos</li>
+                    <li>Sobre Nosotros</li>
+                </ol>
+            </div>
+        </StyledContainer>
     )
 }
 export default Navigator
