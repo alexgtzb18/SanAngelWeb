@@ -8,6 +8,11 @@
   src: url('./fonts/Auro-Bold_Italic.otf')
 }
 
+@font-face {
+  font-family: Auro-Bold;
+  src: url('./fonts/Auro-Bold.otf')
+}
+
 body{
   font-family: Auro-Regular!important;
   font-size: 30px!important;
@@ -20,3 +25,4 @@ h1{
   font-family: Auro-Bold-Italic!important;
   line-height: 1.2!important;
 }
+

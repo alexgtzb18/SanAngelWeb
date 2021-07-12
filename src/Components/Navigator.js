@@ -9,14 +9,12 @@ const StyledContainer = styled.div`
     width: 100%;
     margin: 20px;
     z-index: 20;
-    
-    
-
 
     .navbar{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        font-family: Auro-Bold;
     }
 
     .logo-nav{
